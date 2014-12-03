@@ -13,6 +13,27 @@
 		E3B04C371A251F2100019E6B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3B04C361A251F2100019E6B /* Images.xcassets */; };
 		E3B04C3A1A251F2100019E6B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3B04C381A251F2100019E6B /* LaunchScreen.xib */; };
 		E3B04C461A251F2100019E6B /* iClairAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B04C451A251F2100019E6B /* iClairAppTests.swift */; };
+		E3B04C521A251F4700019E6B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B04C4F1A251F4700019E6B /* Bolts.framework */; };
+		E3B04C531A251F4700019E6B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B04C501A251F4700019E6B /* Parse.framework */; };
+		E3B04C541A251F4700019E6B /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B04C511A251F4700019E6B /* ParseFacebookUtils.framework */; };
+		E3B04C561A251F7900019E6B /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B04C551A251F7900019E6B /* FacebookSDK.framework */; };
+		E3B04C591A251F9600019E6B /* Login with Facebook Image.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B04C571A251F9600019E6B /* Login with Facebook Image.png */; };
+		E3B04C5A1A251F9600019E6B /* Logo with White Background.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B04C581A251F9600019E6B /* Logo with White Background.png */; };
+		E3B04C5F1A25226300019E6B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B04C5E1A25226300019E6B /* AudioToolbox.framework */; };
+		E3B04C611A25226A00019E6B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B04C601A25226A00019E6B /* CFNetwork.framework */; };
+		E3B04C631A25227100019E6B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B04C621A25227100019E6B /* CoreGraphics.framework */; };
+		E3B04C651A25227A00019E6B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B04C641A25227A00019E6B /* CoreLocation.framework */; };
+		E3B04C671A25228600019E6B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B04C661A25228600019E6B /* libz.dylib */; };
+		E3B04C691A25228E00019E6B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B04C681A25228E00019E6B /* MobileCoreServices.framework */; };
+		E3B04C6B1A25229600019E6B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B04C6A1A25229600019E6B /* QuartzCore.framework */; };
+		E3B04C6D1A25229D00019E6B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B04C6C1A25229D00019E6B /* Security.framework */; };
+		E3B04C6F1A2522A400019E6B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B04C6E1A2522A400019E6B /* StoreKit.framework */; };
+		E3B04C711A2522AC00019E6B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3B04C701A2522AC00019E6B /* SystemConfiguration.framework */; };
+		E3B04C731A2557C900019E6B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B04C721A2557C900019E6B /* SignUpViewController.swift */; };
+		E3B04C751A26B64100019E6B /* SignIn Headings in Resources */ = {isa = PBXBuildFile; fileRef = E3B04C741A26B64100019E6B /* SignIn Headings */; };
+		E3B04C771A26BC1300019E6B /* FindFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B04C761A26BC1300019E6B /* FindFriendsViewController.swift */; };
+		E3B04C791A26C0C800019E6B /* CompleteProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B04C781A26C0C800019E6B /* CompleteProfileViewController.swift */; };
+		E3B04C7B1A26C24A00019E6B /* ManageLivesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B04C7A1A26C24A00019E6B /* ManageLivesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +43,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = E3B04C291A251F2100019E6B;
 			remoteInfo = iClairApp;
+		};
+		E3B04CAF1A2A6D0000019E6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3B04CAA1A2A6CFA00019E6B /* iClairUserProfile.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E3B04C851A2A6CF900019E6B;
+			remoteInfo = iClairUserProfile;
+		};
+		E3B04CB11A2A6D0000019E6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3B04CAA1A2A6CFA00019E6B /* iClairUserProfile.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E3B04C9A1A2A6CFA00019E6B;
+			remoteInfo = iClairUserProfileTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -36,6 +71,29 @@
 		E3B04C3F1A251F2100019E6B /* iClairAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iClairAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3B04C441A251F2100019E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3B04C451A251F2100019E6B /* iClairAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iClairAppTests.swift; sourceTree = "<group>"; };
+		E3B04C4F1A251F4700019E6B /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		E3B04C501A251F4700019E6B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		E3B04C511A251F4700019E6B /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		E3B04C551A251F7900019E6B /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		E3B04C571A251F9600019E6B /* Login with Facebook Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Login with Facebook Image.png"; sourceTree = "<group>"; };
+		E3B04C581A251F9600019E6B /* Logo with White Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo with White Background.png"; sourceTree = "<group>"; };
+		E3B04C5B1A2521BD00019E6B /* iClairApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iClairApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		E3B04C5E1A25226300019E6B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E3B04C601A25226A00019E6B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E3B04C621A25227100019E6B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E3B04C641A25227A00019E6B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E3B04C661A25228600019E6B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		E3B04C681A25228E00019E6B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		E3B04C6A1A25229600019E6B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E3B04C6C1A25229D00019E6B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E3B04C6E1A2522A400019E6B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		E3B04C701A2522AC00019E6B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E3B04C721A2557C900019E6B /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E3B04C741A26B64100019E6B /* SignIn Headings */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SignIn Headings"; sourceTree = "<group>"; };
+		E3B04C761A26BC1300019E6B /* FindFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindFriendsViewController.swift; sourceTree = "<group>"; };
+		E3B04C781A26C0C800019E6B /* CompleteProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteProfileViewController.swift; sourceTree = "<group>"; };
+		E3B04C7A1A26C24A00019E6B /* ManageLivesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManageLivesViewController.swift; sourceTree = "<group>"; };
+		E3B04CAA1A2A6CFA00019E6B /* iClairUserProfile.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iClairUserProfile.xcodeproj; path = iClairUserProfile/iClairUserProfile.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +101,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3B04C711A2522AC00019E6B /* SystemConfiguration.framework in Frameworks */,
+				E3B04C6F1A2522A400019E6B /* StoreKit.framework in Frameworks */,
+				E3B04C6D1A25229D00019E6B /* Security.framework in Frameworks */,
+				E3B04C6B1A25229600019E6B /* QuartzCore.framework in Frameworks */,
+				E3B04C691A25228E00019E6B /* MobileCoreServices.framework in Frameworks */,
+				E3B04C671A25228600019E6B /* libz.dylib in Frameworks */,
+				E3B04C651A25227A00019E6B /* CoreLocation.framework in Frameworks */,
+				E3B04C631A25227100019E6B /* CoreGraphics.framework in Frameworks */,
+				E3B04C611A25226A00019E6B /* CFNetwork.framework in Frameworks */,
+				E3B04C5F1A25226300019E6B /* AudioToolbox.framework in Frameworks */,
+				E3B04C531A251F4700019E6B /* Parse.framework in Frameworks */,
+				E3B04C561A251F7900019E6B /* FacebookSDK.framework in Frameworks */,
+				E3B04C521A251F4700019E6B /* Bolts.framework in Frameworks */,
+				E3B04C541A251F4700019E6B /* ParseFacebookUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +131,20 @@
 		E3B04C211A251F2100019E6B = {
 			isa = PBXGroup;
 			children = (
+				E3B04C701A2522AC00019E6B /* SystemConfiguration.framework */,
+				E3B04C6E1A2522A400019E6B /* StoreKit.framework */,
+				E3B04C6C1A25229D00019E6B /* Security.framework */,
+				E3B04C6A1A25229600019E6B /* QuartzCore.framework */,
+				E3B04C681A25228E00019E6B /* MobileCoreServices.framework */,
+				E3B04C661A25228600019E6B /* libz.dylib */,
+				E3B04C641A25227A00019E6B /* CoreLocation.framework */,
+				E3B04C621A25227100019E6B /* CoreGraphics.framework */,
+				E3B04C601A25226A00019E6B /* CFNetwork.framework */,
+				E3B04C5E1A25226300019E6B /* AudioToolbox.framework */,
 				E3B04C2C1A251F2100019E6B /* iClairApp */,
 				E3B04C421A251F2100019E6B /* iClairAppTests */,
 				E3B04C2B1A251F2100019E6B /* Products */,
+				E3B04C5B1A2521BD00019E6B /* iClairApp-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +160,21 @@
 		E3B04C2C1A251F2100019E6B /* iClairApp */ = {
 			isa = PBXGroup;
 			children = (
+				E3B04CAA1A2A6CFA00019E6B /* iClairUserProfile.xcodeproj */,
+				E3B04C551A251F7900019E6B /* FacebookSDK.framework */,
+				E3B04C4F1A251F4700019E6B /* Bolts.framework */,
+				E3B04C501A251F4700019E6B /* Parse.framework */,
+				E3B04C511A251F4700019E6B /* ParseFacebookUtils.framework */,
 				E3B04C2F1A251F2100019E6B /* AppDelegate.swift */,
 				E3B04C311A251F2100019E6B /* ViewController.swift */,
+				E3B04C571A251F9600019E6B /* Login with Facebook Image.png */,
+				E3B04C581A251F9600019E6B /* Logo with White Background.png */,
 				E3B04C331A251F2100019E6B /* Main.storyboard */,
+				E3B04C741A26B64100019E6B /* SignIn Headings */,
+				E3B04C721A2557C900019E6B /* SignUpViewController.swift */,
+				E3B04C761A26BC1300019E6B /* FindFriendsViewController.swift */,
+				E3B04C781A26C0C800019E6B /* CompleteProfileViewController.swift */,
+				E3B04C7A1A26C24A00019E6B /* ManageLivesViewController.swift */,
 				E3B04C361A251F2100019E6B /* Images.xcassets */,
 				E3B04C381A251F2100019E6B /* LaunchScreen.xib */,
 				E3B04C2D1A251F2100019E6B /* Supporting Files */,
@@ -110,6 +205,15 @@
 				E3B04C441A251F2100019E6B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E3B04CAB1A2A6CFA00019E6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3B04CB01A2A6D0000019E6B /* iClairUserProfile.app */,
+				E3B04CB21A2A6D0000019E6B /* iClairUserProfileTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +283,12 @@
 			mainGroup = E3B04C211A251F2100019E6B;
 			productRefGroup = E3B04C2B1A251F2100019E6B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E3B04CAB1A2A6CFA00019E6B /* Products */;
+					ProjectRef = E3B04CAA1A2A6CFA00019E6B /* iClairUserProfile.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E3B04C291A251F2100019E6B /* iClairApp */,
@@ -187,6 +297,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		E3B04CB01A2A6D0000019E6B /* iClairUserProfile.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = iClairUserProfile.app;
+			remoteRef = E3B04CAF1A2A6D0000019E6B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E3B04CB21A2A6D0000019E6B /* iClairUserProfileTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = iClairUserProfileTests.xctest;
+			remoteRef = E3B04CB11A2A6D0000019E6B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		E3B04C281A251F2100019E6B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -194,7 +321,10 @@
 			files = (
 				E3B04C351A251F2100019E6B /* Main.storyboard in Resources */,
 				E3B04C3A1A251F2100019E6B /* LaunchScreen.xib in Resources */,
+				E3B04C751A26B64100019E6B /* SignIn Headings in Resources */,
+				E3B04C591A251F9600019E6B /* Login with Facebook Image.png in Resources */,
 				E3B04C371A251F2100019E6B /* Images.xcassets in Resources */,
+				E3B04C5A1A251F9600019E6B /* Logo with White Background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +342,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3B04C731A2557C900019E6B /* SignUpViewController.swift in Sources */,
+				E3B04C771A26BC1300019E6B /* FindFriendsViewController.swift in Sources */,
+				E3B04C791A26C0C800019E6B /* CompleteProfileViewController.swift in Sources */,
+				E3B04C7B1A26C24A00019E6B /* ManageLivesViewController.swift in Sources */,
 				E3B04C321A251F2100019E6B /* ViewController.swift in Sources */,
 				E3B04C301A251F2100019E6B /* AppDelegate.swift in Sources */,
 			);
@@ -336,9 +470,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iClairApp",
+				);
 				INFOPLIST_FILE = iClairApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iClairApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -346,9 +487,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iClairApp",
+				);
 				INFOPLIST_FILE = iClairApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iClairApp-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -405,6 +552,7 @@
 				E3B04C4B1A251F2100019E6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E3B04C4C1A251F2100019E6B /* Build configuration list for PBXNativeTarget "iClairAppTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +561,7 @@
 				E3B04C4E1A251F2100019E6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
