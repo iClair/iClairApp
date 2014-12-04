@@ -27,13 +27,13 @@ class ViewController: UIViewController, FBLoginViewDelegate {
             
             NSLog("User signed up and logged in through Facebook!")
             println("New log in")
-            //self.performSegueWithIdentifier("homeSegue", sender: self)
+            self.performSegueWithIdentifier("newsFeedSegue", sender: self)
             
             } else {
             
             NSLog("User logged in through Facebook!")
             println("User logged in")
-            //self.performSegueWithIdentifier("homeSegue", sender: self)
+            self.performSegueWithIdentifier("newsFeedSegue", sender: self)
             }
             })
         
@@ -49,6 +49,7 @@ class ViewController: UIViewController, FBLoginViewDelegate {
             println(result)
             
         })
+        /*
         PFUser.currentUser().saveInBackgroundWithBlock {
             (success: Bool!, error: NSError!) -> Void in
             if (success != nil) {
@@ -56,8 +57,10 @@ class ViewController: UIViewController, FBLoginViewDelegate {
             } else {
                 NSLog("error")
             }
-        }
+
+        }*/
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -65,7 +68,7 @@ class ViewController: UIViewController, FBLoginViewDelegate {
             println("viewDidLoad is working when user logs in")
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

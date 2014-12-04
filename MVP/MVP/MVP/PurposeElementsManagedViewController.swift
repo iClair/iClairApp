@@ -20,7 +20,7 @@ class PurposeElementsManagedViewController: UIViewController, UITableViewDelegat
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "cell")
-        cell.textLabel.text = "Table Cell Content"
+        cell.textLabel?.text = "Table Cell Content"
         return cell
     }
     

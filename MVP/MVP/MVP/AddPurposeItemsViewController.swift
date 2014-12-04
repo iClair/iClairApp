@@ -197,9 +197,54 @@ class AddPurposeItemsViewController: UIViewController, UIPickerViewDelegate, UIN
     var purposeItems = PFObject(className:"purposeItems")
     purposeItems["text"] = purposeItemsCategoryText
     purposeItems["category"] = purposeItemsCategory
-    purposeItems["image"] = self.pickedImage.image
-    purposeItems.save()
+    //purposeItems["image"] = self.pickedImage.image
+    //purposeItems.save()
     
+    /* code from lecture 109 to save down image with other variables
+    purposeItems.saveInBackgroundWithBlock{(success: Bool!, error: NSError!) -> Void in
+            
+            
+        if success == false {
+            
+            self.activityIndicator.stopAnimating()
+                UIApplication.sharedApplication().endIgnoringInteractionEvents()
+                
+            self.displayAlert("Could Not Post Image", error: "Please try again later")
+                
+        } else {
+                
+            let imageData = UIImagePNGRepresentation(self.imageToPost.image)
+                
+            let imageFile = PFFile(name: "image.png", data: imageData)
+                
+            post["imageFile"] = imageFile
+                
+            post.saveInBackgroundWithBlock{(success: Bool!, error: NSError!) -> Void in
+                    
+                self.activityIndicator.stopAnimating()
+                UIApplication.sharedApplication().endIgnoringInteractionEvents()
+                    
+                if success == false {
+                        
+                    self.displayAlert("Could Not Post Image", error: "Please try again later")
+                        
+                } else {
+                        
+                    self.displayAlert("Image Posted!", error: "Your image has been posted successfully")
+                        
+                    self.photoSelected = 0
+                        
+                    self.imageToPost.image = UIImage(named: "315px-Blank_woman_placeholder.svg")
+                        
+                    self.shareText.text = ""
+                        
+                    println("posted successfully")
+                        
+                }
+                    
+            }*/
+        
+
     }
     
     override func viewDidLoad() {
