@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, FBLoginViewDelegate {
-
+    
     @IBAction func signInWithFacebok(sender: AnyObject) {
         
         var fbLoginView:FBLoginView = FBLoginView(readPermissions: ["public_profile", "email", "user_friends"])

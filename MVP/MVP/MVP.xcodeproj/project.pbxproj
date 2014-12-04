@@ -30,6 +30,10 @@
 		E3D6FFF51A2CC3A70057153E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3D6FFF31A2CC3A70057153E /* Main.storyboard */; };
 		E3D6FFF71A2CC3A70057153E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3D6FFF61A2CC3A70057153E /* Images.xcassets */; };
 		E3D6FFFA1A2CC3A70057153E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3D6FFF81A2CC3A70057153E /* LaunchScreen.xib */; };
+		E3F5AB391A302E7200286843 /* SideBarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F5AB381A302E7200286843 /* SideBarTableViewController.swift */; };
+		E3F5AB3B1A30343200286843 /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F5AB3A1A30343200286843 /* SideBar.swift */; };
+		E3F5AB411A3045C400286843 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F5AB401A3045C400286843 /* UserProfileViewController.swift */; };
+		E3F5AB431A30474D00286843 /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F5AB421A30474D00286843 /* NewsFeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,10 @@
 		E3D6FFF61A2CC3A70057153E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E3D6FFF91A2CC3A70057153E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E3D6FFFF1A2CC3A70057153E /* MVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3F5AB381A302E7200286843 /* SideBarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideBarTableViewController.swift; path = ../SideBarTableViewController.swift; sourceTree = "<group>"; };
+		E3F5AB3A1A30343200286843 /* SideBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideBar.swift; path = ../SideBar.swift; sourceTree = "<group>"; };
+		E3F5AB401A3045C400286843 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		E3F5AB421A30474D00286843 /* NewsFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsFeedViewController.swift; path = ../NewsFeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,8 +169,12 @@
 				E303A1241A2D439200732B28 /* Logo with White Background.png */,
 				E3D6FFF11A2CC3A70057153E /* ViewController.swift */,
 				E3D6FFF31A2CC3A70057153E /* Main.storyboard */,
+				E3F5AB421A30474D00286843 /* NewsFeedViewController.swift */,
+				E3F5AB401A3045C400286843 /* UserProfileViewController.swift */,
 				E3BE18951A2EA6340035CD80 /* PurposeElementsManagedViewController.swift */,
 				E3BE18991A2F6C540035CD80 /* AddPurposeItemsViewController.swift */,
+				E3F5AB381A302E7200286843 /* SideBarTableViewController.swift */,
+				E3F5AB3A1A30343200286843 /* SideBar.swift */,
 				E3D6FFF61A2CC3A70057153E /* Images.xcassets */,
 				E3D6FFF81A2CC3A70057153E /* LaunchScreen.xib */,
 				E3D6FFED1A2CC3A70057153E /* Supporting Files */,
@@ -281,9 +293,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3D6FFF21A2CC3A70057153E /* ViewController.swift in Sources */,
+				E3F5AB411A3045C400286843 /* UserProfileViewController.swift in Sources */,
 				E3D6FFF01A2CC3A70057153E /* AppDelegate.swift in Sources */,
 				E3BE18961A2EA6340035CD80 /* PurposeElementsManagedViewController.swift in Sources */,
 				E3BE189A1A2F6C540035CD80 /* AddPurposeItemsViewController.swift in Sources */,
+				E3F5AB3B1A30343200286843 /* SideBar.swift in Sources */,
+				E3F5AB391A302E7200286843 /* SideBarTableViewController.swift in Sources */,
+				E3F5AB431A30474D00286843 /* NewsFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
