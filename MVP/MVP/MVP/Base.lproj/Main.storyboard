@@ -168,7 +168,7 @@
         <!--User Profile-->
         <scene sceneID="3kd-TZ-MtZ">
             <objects>
-                <viewController title="User Profile" id="ktS-Y2-ygg" sceneMemberID="viewController">
+                <viewController title="User Profile" id="ktS-Y2-ygg" customClass="UserProfileViewController" customModule="MVP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fEL-Kj-7iT"/>
                         <viewControllerLayoutGuide type="bottom" id="lwP-HJ-js4"/>
