@@ -49,7 +49,7 @@ class ViewController: UIViewController, FBLoginViewDelegate {
             println(result)
             
         })
-        /*
+        /*Xcode illogically doesn't recognize current user anymore, as if he isn't logged in
         PFUser.currentUser().saveInBackgroundWithBlock {
             (success: Bool!, error: NSError!) -> Void in
             if (success != nil) {
@@ -77,3 +77,9 @@ class ViewController: UIViewController, FBLoginViewDelegate {
 
 }
 
+/* Code I need to go back and implement:
+1) Facebook login
+2) Menu side bar
+3) Limiting character length for all text fields
+4) Clear keyboard? Call keyboard???
+*/

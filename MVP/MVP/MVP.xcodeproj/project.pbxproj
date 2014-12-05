@@ -11,6 +11,9 @@
 		E303A1261A2D439200732B28 /* Logo with White Background.png in Resources */ = {isa = PBXBuildFile; fileRef = E303A1241A2D439200732B28 /* Logo with White Background.png */; };
 		E3BE18961A2EA6340035CD80 /* PurposeElementsManagedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BE18951A2EA6340035CD80 /* PurposeElementsManagedViewController.swift */; };
 		E3BE189A1A2F6C540035CD80 /* AddPurposeItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BE18991A2F6C540035CD80 /* AddPurposeItemsViewController.swift */; };
+		E3CE3C3D1A316E31005565E4 /* Purpose Framework.png in Resources */ = {isa = PBXBuildFile; fileRef = E3CE3C3C1A316E31005565E4 /* Purpose Framework.png */; };
+		E3CE3C3F1A316E3D005565E4 /* Goals Framework.png in Resources */ = {isa = PBXBuildFile; fileRef = E3CE3C3E1A316E3D005565E4 /* Goals Framework.png */; };
+		E3D2A87B1A31810300E3F2E0 /* Creighton Taylor Pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2A87A1A31810300E3F2E0 /* Creighton Taylor Pic.jpg */; };
 		E3D600061A2CC3A70057153E /* MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D600051A2CC3A70057153E /* MVPTests.swift */; };
 		E3D600121A2CC4480057153E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D6000F1A2CC4480057153E /* Bolts.framework */; };
 		E3D600131A2CC4480057153E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D600101A2CC4480057153E /* Parse.framework */; };
@@ -51,6 +54,9 @@
 		E303A1241A2D439200732B28 /* Logo with White Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo with White Background.png"; sourceTree = "<group>"; };
 		E3BE18951A2EA6340035CD80 /* PurposeElementsManagedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurposeElementsManagedViewController.swift; sourceTree = "<group>"; };
 		E3BE18991A2F6C540035CD80 /* AddPurposeItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPurposeItemsViewController.swift; sourceTree = "<group>"; };
+		E3CE3C3C1A316E31005565E4 /* Purpose Framework.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purpose Framework.png"; sourceTree = "<group>"; };
+		E3CE3C3E1A316E3D005565E4 /* Goals Framework.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Goals Framework.png"; sourceTree = "<group>"; };
+		E3D2A87A1A31810300E3F2E0 /* Creighton Taylor Pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Creighton Taylor Pic.jpg"; sourceTree = "<group>"; };
 		E3D600041A2CC3A70057153E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3D600051A2CC3A70057153E /* MVPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPTests.swift; sourceTree = "<group>"; };
 		E3D6000F1A2CC4480057153E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -165,6 +171,9 @@
 				E3D600101A2CC4480057153E /* Parse.framework */,
 				E3D600111A2CC4480057153E /* ParseFacebookUtils.framework */,
 				E3D6FFEF1A2CC3A70057153E /* AppDelegate.swift */,
+				E3CE3C3C1A316E31005565E4 /* Purpose Framework.png */,
+				E3CE3C3E1A316E3D005565E4 /* Goals Framework.png */,
+				E3D2A87A1A31810300E3F2E0 /* Creighton Taylor Pic.jpg */,
 				E303A1231A2D439200732B28 /* Login with Facebook Image.png */,
 				E303A1241A2D439200732B28 /* Logo with White Background.png */,
 				E3D6FFF11A2CC3A70057153E /* ViewController.swift */,
@@ -271,9 +280,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3D6FFF51A2CC3A70057153E /* Main.storyboard in Resources */,
+				E3D2A87B1A31810300E3F2E0 /* Creighton Taylor Pic.jpg in Resources */,
 				E3D6FFFA1A2CC3A70057153E /* LaunchScreen.xib in Resources */,
+				E3CE3C3F1A316E3D005565E4 /* Goals Framework.png in Resources */,
 				E303A1251A2D439200732B28 /* Login with Facebook Image.png in Resources */,
 				E3D6FFF71A2CC3A70057153E /* Images.xcassets in Resources */,
+				E3CE3C3D1A316E31005565E4 /* Purpose Framework.png in Resources */,
 				E303A1261A2D439200732B28 /* Logo with White Background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
