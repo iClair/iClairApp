@@ -15,19 +15,17 @@ class PurposeElementsManagedViewController: UIViewController, UITableViewDelegat
         return 4
     }
     
-    // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
-    // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
-    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "cell")
         cell.textLabel?.text = "Table Cell Content"
         return cell
     }
     
-    let array = ["what you love", "what you are good at", "what the world needs", "what you can be paid for"]
+    let purposeAreas = ["what you love", "what you are good at", "what the world needs", "what you can be paid for"]
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
     
-        return array.count
+        return purposeAreas.count
     
     } // Default is 1 if not implemente.ted
     
@@ -41,16 +39,5 @@ class PurposeElementsManagedViewController: UIViewController, UITableViewDelegat
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

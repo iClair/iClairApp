@@ -8,12 +8,81 @@
 
 import UIKit
 
-class UserProfileViewController: UIViewController, SideBarDelegate {
+class UserProfileViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate { //SideBarDelegate...random error. Don't conform.
+    
     @IBOutlet weak var profilePic: UIImageView!
     @IBOutlet weak var profileFullName: UILabel!
     @IBOutlet weak var visionStatement: UITextView!
     @IBOutlet weak var bandBelowPostButton: UILabel!
     @IBOutlet weak var visionStatementPostButton: UIButton!
+    @IBAction func visionStatementPostButton(sender: AnyObject) {
+        
+        var error = ""
+        
+        if (visionStatement.text == ""){
+            error = "Please enter your vision"
+            //input displayAlert function as in lecture 109
+        }
+        
+        var visionStatementPost = PFObject(className: "Vision Statement")
+        visionStatementPost["text"] = visionStatement.text
+        visionStatementPost["username"] = PFUser.currentUser().username
+        visionStatementPost.saveInBackgroundWithBlock{(success: Bool!, error: NSError!) -> Void in
+            if success == false{
+                println("error")
+            } else {
+                println("success")
+            }
+        
+        }
+        
+    }
+    
+    @IBAction func chooseProfilePic(sender: AnyObject) {
+        var image = UIImagePickerController()
+        image.delegate = self
+        image.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        image.allowsEditing = false
+        
+        self.presentViewController(image, animated: true, completion: nil)
+    }
+
+    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
+        println("image selected")
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+        profilePic.image = image
+        
+        var profilePicSaved = PFObject(className: "Profile Pic")
+        profilePicSaved["username"] = PFUser.currentUser().username
+        profilePicSaved.saveInBackgroundWithBlock{(success: Bool!, error: NSError!) -> Void in
+            if success == false{
+                println("error")
+            } else {
+                println("success")
+            
+                let imageData = UIImagePNGRepresentation(self.profilePic.image)
+            
+                let imageFile = PFFile(name: "image.png", data: imageData)
+            
+                profilePicSaved["imageFile"] = imageFile
+            
+                profilePicSaved.saveInBackgroundWithBlock{(success: Bool!, error: NSError!) -> Void in
+                
+                    if success == false {
+                    
+                        println("Please try again later. Did not save successfully")
+                        //need to have an error message displayed here
+                    
+                    } else {
+                        
+                        println("saved successfully!")
+                    }
+                }
+            }
+        
+        }
+    }
 
     var sideBar:SideBar = SideBar()
     
@@ -46,8 +115,8 @@ class UserProfileViewController: UIViewController, SideBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        /*AppDelegate is crashing all of sudden. So testing without.
-        sideBar = SideBar(sourceView: self.view, menuItems: ["My Profile", "Get Help", "Give Help", "Settings"])
+        /*My failed attempt to include a blurry side bar
+        sideBar = SideBar(sourceView: self.view, menuItems: ["My Profile", "Get Help", "Give Help", "Settings", "Logout"])
         sideBar.delegate = self
 
         visionStatement.editable = true

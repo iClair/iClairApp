@@ -9,11 +9,22 @@
 /* Begin PBXBuildFile section */
 		E303A1251A2D439200732B28 /* Login with Facebook Image.png in Resources */ = {isa = PBXBuildFile; fileRef = E303A1231A2D439200732B28 /* Login with Facebook Image.png */; };
 		E303A1261A2D439200732B28 /* Logo with White Background.png in Resources */ = {isa = PBXBuildFile; fileRef = E303A1241A2D439200732B28 /* Logo with White Background.png */; };
+		E326D9E71A32A3EC00840FEB /* ManualSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E326D9E61A32A3EC00840FEB /* ManualSignInViewController.swift */; };
+		E3270A0D1A356482006B210E /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3270A0C1A356482006B210E /* Cell.swift */; };
+		E39A0BF41A3382250079BC72 /* SearchPreExistingPurposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39A0BF31A3382250079BC72 /* SearchPreExistingPurposeViewController.swift */; };
+		E39A0BF61A33B32F0079BC72 /* CampaignFromWhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39A0BF51A33B32F0079BC72 /* CampaignFromWhoViewController.swift */; };
+		E39A0BF81A33B8A80079BC72 /* FindFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39A0BF71A33B8A80079BC72 /* FindFriendsViewController.swift */; };
+		E39A0BFA1A3437B80079BC72 /* FriendRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39A0BF91A3437B80079BC72 /* FriendRequestsViewController.swift */; };
+		E39A0BFC1A350E750079BC72 /* Unisex Profile Image Placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E39A0BFB1A350E750079BC72 /* Unisex Profile Image Placeholder.jpg */; };
+		E39A0BFE1A351F650079BC72 /* GenericImagePlaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = E39A0BFD1A351F650079BC72 /* GenericImagePlaceholder.png */; };
+		E39A0C041A3552B00079BC72 /* Green Add Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E39A0C031A3552B00079BC72 /* Green Add Icon.jpg */; };
+		E39A0C061A3552C00079BC72 /* Friends Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E39A0C051A3552C00079BC72 /* Friends Icon.png */; };
 		E3BE18961A2EA6340035CD80 /* PurposeElementsManagedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BE18951A2EA6340035CD80 /* PurposeElementsManagedViewController.swift */; };
 		E3BE189A1A2F6C540035CD80 /* AddPurposeItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BE18991A2F6C540035CD80 /* AddPurposeItemsViewController.swift */; };
+		E3C4F21A1A32588700A92620 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C4F2191A32588700A92620 /* FriendsViewController.swift */; };
 		E3CE3C3D1A316E31005565E4 /* Purpose Framework.png in Resources */ = {isa = PBXBuildFile; fileRef = E3CE3C3C1A316E31005565E4 /* Purpose Framework.png */; };
 		E3CE3C3F1A316E3D005565E4 /* Goals Framework.png in Resources */ = {isa = PBXBuildFile; fileRef = E3CE3C3E1A316E3D005565E4 /* Goals Framework.png */; };
-		E3D2A87B1A31810300E3F2E0 /* Creighton Taylor Pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3D2A87A1A31810300E3F2E0 /* Creighton Taylor Pic.jpg */; };
+		E3D165621A329A2700F31454 /* FacebookSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D165611A329A2700F31454 /* FacebookSignInViewController.swift */; };
 		E3D600061A2CC3A70057153E /* MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D600051A2CC3A70057153E /* MVPTests.swift */; };
 		E3D600121A2CC4480057153E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D6000F1A2CC4480057153E /* Bolts.framework */; };
 		E3D600131A2CC4480057153E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D600101A2CC4480057153E /* Parse.framework */; };
@@ -29,7 +40,6 @@
 		E3D600261A2CC60E0057153E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D600251A2CC60E0057153E /* StoreKit.framework */; };
 		E3D600281A2CC6160057153E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D600271A2CC6160057153E /* SystemConfiguration.framework */; };
 		E3D6FFF01A2CC3A70057153E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D6FFEF1A2CC3A70057153E /* AppDelegate.swift */; };
-		E3D6FFF21A2CC3A70057153E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D6FFF11A2CC3A70057153E /* ViewController.swift */; };
 		E3D6FFF51A2CC3A70057153E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3D6FFF31A2CC3A70057153E /* Main.storyboard */; };
 		E3D6FFF71A2CC3A70057153E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3D6FFF61A2CC3A70057153E /* Images.xcassets */; };
 		E3D6FFFA1A2CC3A70057153E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3D6FFF81A2CC3A70057153E /* LaunchScreen.xib */; };
@@ -52,11 +62,22 @@
 /* Begin PBXFileReference section */
 		E303A1231A2D439200732B28 /* Login with Facebook Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Login with Facebook Image.png"; sourceTree = "<group>"; };
 		E303A1241A2D439200732B28 /* Logo with White Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Logo with White Background.png"; sourceTree = "<group>"; };
+		E326D9E61A32A3EC00840FEB /* ManualSignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ManualSignInViewController.swift; path = ../ManualSignInViewController.swift; sourceTree = "<group>"; };
+		E3270A0C1A356482006B210E /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cell.swift; path = ../Cell.swift; sourceTree = "<group>"; };
+		E39A0BF31A3382250079BC72 /* SearchPreExistingPurposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPreExistingPurposeViewController.swift; sourceTree = "<group>"; };
+		E39A0BF51A33B32F0079BC72 /* CampaignFromWhoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignFromWhoViewController.swift; sourceTree = "<group>"; };
+		E39A0BF71A33B8A80079BC72 /* FindFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindFriendsViewController.swift; sourceTree = "<group>"; };
+		E39A0BF91A3437B80079BC72 /* FriendRequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendRequestsViewController.swift; sourceTree = "<group>"; };
+		E39A0BFB1A350E750079BC72 /* Unisex Profile Image Placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Unisex Profile Image Placeholder.jpg"; sourceTree = "<group>"; };
+		E39A0BFD1A351F650079BC72 /* GenericImagePlaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GenericImagePlaceholder.png; sourceTree = "<group>"; };
+		E39A0C031A3552B00079BC72 /* Green Add Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Green Add Icon.jpg"; sourceTree = "<group>"; };
+		E39A0C051A3552C00079BC72 /* Friends Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Friends Icon.png"; sourceTree = "<group>"; };
 		E3BE18951A2EA6340035CD80 /* PurposeElementsManagedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurposeElementsManagedViewController.swift; sourceTree = "<group>"; };
 		E3BE18991A2F6C540035CD80 /* AddPurposeItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPurposeItemsViewController.swift; sourceTree = "<group>"; };
+		E3C4F2191A32588700A92620 /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		E3CE3C3C1A316E31005565E4 /* Purpose Framework.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purpose Framework.png"; sourceTree = "<group>"; };
 		E3CE3C3E1A316E3D005565E4 /* Goals Framework.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Goals Framework.png"; sourceTree = "<group>"; };
-		E3D2A87A1A31810300E3F2E0 /* Creighton Taylor Pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Creighton Taylor Pic.jpg"; sourceTree = "<group>"; };
+		E3D165611A329A2700F31454 /* FacebookSignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookSignInViewController.swift; sourceTree = "<group>"; };
 		E3D600041A2CC3A70057153E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3D600051A2CC3A70057153E /* MVPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPTests.swift; sourceTree = "<group>"; };
 		E3D6000F1A2CC4480057153E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -76,7 +97,6 @@
 		E3D6FFEA1A2CC3A70057153E /* MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3D6FFEE1A2CC3A70057153E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3D6FFEF1A2CC3A70057153E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E3D6FFF11A2CC3A70057153E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E3D6FFF41A2CC3A70057153E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3D6FFF61A2CC3A70057153E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E3D6FFF91A2CC3A70057153E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -173,11 +193,21 @@
 				E3D6FFEF1A2CC3A70057153E /* AppDelegate.swift */,
 				E3CE3C3C1A316E31005565E4 /* Purpose Framework.png */,
 				E3CE3C3E1A316E3D005565E4 /* Goals Framework.png */,
-				E3D2A87A1A31810300E3F2E0 /* Creighton Taylor Pic.jpg */,
+				E39A0C051A3552C00079BC72 /* Friends Icon.png */,
+				E39A0C031A3552B00079BC72 /* Green Add Icon.jpg */,
+				E39A0BFD1A351F650079BC72 /* GenericImagePlaceholder.png */,
+				E39A0BFB1A350E750079BC72 /* Unisex Profile Image Placeholder.jpg */,
 				E303A1231A2D439200732B28 /* Login with Facebook Image.png */,
 				E303A1241A2D439200732B28 /* Logo with White Background.png */,
-				E3D6FFF11A2CC3A70057153E /* ViewController.swift */,
+				E3D165611A329A2700F31454 /* FacebookSignInViewController.swift */,
+				E326D9E61A32A3EC00840FEB /* ManualSignInViewController.swift */,
 				E3D6FFF31A2CC3A70057153E /* Main.storyboard */,
+				E3270A0C1A356482006B210E /* Cell.swift */,
+				E39A0BF31A3382250079BC72 /* SearchPreExistingPurposeViewController.swift */,
+				E39A0BF91A3437B80079BC72 /* FriendRequestsViewController.swift */,
+				E39A0BF71A33B8A80079BC72 /* FindFriendsViewController.swift */,
+				E39A0BF51A33B32F0079BC72 /* CampaignFromWhoViewController.swift */,
+				E3C4F2191A32588700A92620 /* FriendsViewController.swift */,
 				E3F5AB421A30474D00286843 /* NewsFeedViewController.swift */,
 				E3F5AB401A3045C400286843 /* UserProfileViewController.swift */,
 				E3BE18951A2EA6340035CD80 /* PurposeElementsManagedViewController.swift */,
@@ -279,13 +309,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E39A0C041A3552B00079BC72 /* Green Add Icon.jpg in Resources */,
 				E3D6FFF51A2CC3A70057153E /* Main.storyboard in Resources */,
-				E3D2A87B1A31810300E3F2E0 /* Creighton Taylor Pic.jpg in Resources */,
+				E39A0BFE1A351F650079BC72 /* GenericImagePlaceholder.png in Resources */,
+				E39A0BFC1A350E750079BC72 /* Unisex Profile Image Placeholder.jpg in Resources */,
 				E3D6FFFA1A2CC3A70057153E /* LaunchScreen.xib in Resources */,
 				E3CE3C3F1A316E3D005565E4 /* Goals Framework.png in Resources */,
 				E303A1251A2D439200732B28 /* Login with Facebook Image.png in Resources */,
 				E3D6FFF71A2CC3A70057153E /* Images.xcassets in Resources */,
 				E3CE3C3D1A316E31005565E4 /* Purpose Framework.png in Resources */,
+				E39A0C061A3552C00079BC72 /* Friends Icon.png in Resources */,
 				E303A1261A2D439200732B28 /* Logo with White Background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,14 +337,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3D6FFF21A2CC3A70057153E /* ViewController.swift in Sources */,
+				E3C4F21A1A32588700A92620 /* FriendsViewController.swift in Sources */,
+				E39A0BF41A3382250079BC72 /* SearchPreExistingPurposeViewController.swift in Sources */,
+				E3270A0D1A356482006B210E /* Cell.swift in Sources */,
 				E3F5AB411A3045C400286843 /* UserProfileViewController.swift in Sources */,
 				E3D6FFF01A2CC3A70057153E /* AppDelegate.swift in Sources */,
+				E3D165621A329A2700F31454 /* FacebookSignInViewController.swift in Sources */,
 				E3BE18961A2EA6340035CD80 /* PurposeElementsManagedViewController.swift in Sources */,
+				E39A0BF81A33B8A80079BC72 /* FindFriendsViewController.swift in Sources */,
 				E3BE189A1A2F6C540035CD80 /* AddPurposeItemsViewController.swift in Sources */,
+				E39A0BFA1A3437B80079BC72 /* FriendRequestsViewController.swift in Sources */,
 				E3F5AB3B1A30343200286843 /* SideBar.swift in Sources */,
 				E3F5AB391A302E7200286843 /* SideBarTableViewController.swift in Sources */,
+				E326D9E71A32A3EC00840FEB /* ManualSignInViewController.swift in Sources */,
 				E3F5AB431A30474D00286843 /* NewsFeedViewController.swift in Sources */,
+				E39A0BF61A33B32F0079BC72 /* CampaignFromWhoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -43,6 +43,7 @@ class AddPurposeItemsViewController: UIViewController, UIPickerViewDelegate, UIN
     @IBAction func whatCanYouBePaidForTextField(sender: AnyObject) {
     }
     
+    var photoSelected:Bool = false
     
     @IBOutlet weak var pickedImage: UIImageView!
     
@@ -51,6 +52,8 @@ class AddPurposeItemsViewController: UIViewController, UIPickerViewDelegate, UIN
     self.dismissViewControllerAnimated(true, completion: nil)
     
     pickedImage.image = image
+    
+    photoSelected = true
     
     }
     
@@ -174,99 +177,105 @@ class AddPurposeItemsViewController: UIViewController, UIPickerViewDelegate, UIN
     }
     
     }
-
-    @IBAction func submitPurposeItemButton(sender: AnyObject) {
-    
     var purposeItemsCategoryText = ""
     var purposeItemsCategory = ""
-    
-    if (self.whatYouLoveTextField.alpha == 1) {
-    purposeItemsCategoryText = self.whatYouLoveTextField.text
-    purposeItemsCategory = "What you love"
-    } else if (self.whatYouAreGoodAtTextField.alpha == 1){
-    purposeItemsCategoryText = self.whatYouAreGoodAtTextField.text
-    purposeItemsCategory = "What you are good at"
-    } else if (self.whatTheWorldNeedsTextField.alpha == 1){
-    purposeItemsCategoryText = self.whatTheWorldNeedsTextField.text
-    purposeItemsCategory = "What the world needs"
-    } else {
-    purposeItemsCategoryText = self.whatCanYouBePaidForTextField.text
-    purposeItemsCategory = "What you can be paid for"
-    }
-    
-    var purposeItems = PFObject(className:"purposeItems")
-    purposeItems["text"] = purposeItemsCategoryText
-    purposeItems["category"] = purposeItemsCategory
-    //purposeItems["image"] = self.pickedImage.image
-    //purposeItems.save()
-    
-    /* code from lecture 109 to save down image with other variables
-    purposeItems.saveInBackgroundWithBlock{(success: Bool!, error: NSError!) -> Void in
-            
-            
-        if success == false {
-            
-            self.activityIndicator.stopAnimating()
-                UIApplication.sharedApplication().endIgnoringInteractionEvents()
-                
-            self.displayAlert("Could Not Post Image", error: "Please try again later")
-                
-        } else {
-                
-            let imageData = UIImagePNGRepresentation(self.imageToPost.image)
-                
-            let imageFile = PFFile(name: "image.png", data: imageData)
-                
-            post["imageFile"] = imageFile
-                
-            post.saveInBackgroundWithBlock{(success: Bool!, error: NSError!) -> Void in
-                    
-                self.activityIndicator.stopAnimating()
-                UIApplication.sharedApplication().endIgnoringInteractionEvents()
-                    
-                if success == false {
-                        
-                    self.displayAlert("Could Not Post Image", error: "Please try again later")
-                        
-                } else {
-                        
-                    self.displayAlert("Image Posted!", error: "Your image has been posted successfully")
-                        
-                    self.photoSelected = 0
-                        
-                    self.imageToPost.image = UIImage(named: "315px-Blank_woman_placeholder.svg")
-                        
-                    self.shareText.text = ""
-                        
-                    println("posted successfully")
-                        
-                }
-                    
-            }*/
-        
+    var error = ""
 
+
+    @IBAction func addPurposeItemPressed(sender: AnyObject) {
+        
+        if (self.whatYouLoveTextField.alpha == 1) {
+            purposeItemsCategoryText = self.whatYouLoveTextField.text
+            purposeItemsCategory = "What you love"
+        } else if (self.whatYouAreGoodAtTextField.alpha == 1){
+            purposeItemsCategoryText = self.whatYouAreGoodAtTextField.text
+            purposeItemsCategory = "What you are good at"
+        } else if (self.whatTheWorldNeedsTextField.alpha == 1){
+            purposeItemsCategoryText = self.whatTheWorldNeedsTextField.text
+            purposeItemsCategory = "What the world needs"
+        } else {
+            purposeItemsCategoryText = self.whatCanYouBePaidForTextField.text
+            purposeItemsCategory = "What you can be paid for"
+        }
+        
+        if (purposeItemsCategoryText == "") {
+            error = "Please enter a purpose item"
+        } else if (pickedImage == false){
+            error = "Please select an associated image"
+        }
+        
+        if (error != ""){
+            error = "Cannot post image now. Try again later"
+        } else{
+        
+            var purposeItems = PFObject(className:"purposeItems")
+            purposeItems["text"] = purposeItemsCategoryText
+            purposeItems["category"] = purposeItemsCategory
+            purposeItems["username"] = PFUser.currentUser().username
+            purposeItems["People Adopted"] = 1
+            purposeItems.saveInBackgroundWithBlock{(success: Bool!, error: NSError!) -> Void in
+            
+                if success == false {
+            
+                    println("please try again later. Did not save successfully")
+                    //need to have a error message displayed here
+            
+                } else {
+            
+                    let imageData = UIImagePNGRepresentation(self.pickedImage.image)
+            
+                    let imageFile = PFFile(name: "image.png", data: imageData)
+            
+                    purposeItems["imageFile"] = imageFile
+            
+                    purposeItems.saveInBackgroundWithBlock{(success: Bool!, error: NSError!) -> Void in
+            
+                        if success == false {
+            
+                            println("Please try again later. Did not save successfully")
+                            //need to have an error message displayed here
+            
+                        } else {
+            
+                            println("posted successfully!")
+            
+                            self.photoSelected = false
+            
+                            self.pickedImage.image = UIImage(named: "GenericImagePlaceholder.png")
+            
+                            self.purposeItemsCategoryText = ""
+                        }
+            
+                    }
+        
+                }
+            }
+
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        photoSelected = false
+        
+        pickedImage.image = UIImage(named: "GenericImagePlaceholder.png")
+        
+        purposeItemsCategoryText = ""
+
+        println(PFUser.currentUser())
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+
+/*
+1) show messages to user if text or pic isn't chosen
+2) show message to user once successfully posted
+3) Make every post start with a lower case letter
+4) Limit characters to a very small amount
+*/
