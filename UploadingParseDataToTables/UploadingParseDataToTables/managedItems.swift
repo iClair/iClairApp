@@ -49,6 +49,8 @@ class managedItems: UIViewController, UITableViewDataSource, UITableViewDelegate
                     }
                 }
             
+            } else{
+                println("Query was unsuccessful")
             }
         }
     }
@@ -68,11 +70,11 @@ class managedItems: UIViewController, UITableViewDataSource, UITableViewDelegate
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var myCell:cell? = self.tableView.dequeueReusableCellWithIdentifier("myCell") as? cell
-        myCell!.itemTitle.text = itemTitles[indexPath.row]
-        myCell!.itemCategory.text = itemCategories[indexPath.row]
+        var mgdCell:managedCell? = self.tableView.dequeueReusableCellWithIdentifier("mgdCell") as? managedCell
+        mgdCell!.itemTitle.text = itemTitles[indexPath.row]
+        mgdCell!.itemCategory.text = itemCategories[indexPath.row]
         //myCell!.peopleAdopted.text = peopleAdoptedText[indexPath.row]
-        return myCell!
+        return mgdCell!
         
     }
 

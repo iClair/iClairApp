@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E3461D1E1A3935AA000A235A /* managedItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3461D1D1A3935AA000A235A /* managedItems.swift */; };
 		E3BB02881A378706001E6153 /* cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BB02871A378706001E6153 /* cell.swift */; };
+		E3CC7DCB1A3A302E009C9DF1 /* managedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CC7DCA1A3A302E009C9DF1 /* managedCell.swift */; };
 		E3D5E0FD1A36858200662C3C /* PurposeItemsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D5E0FC1A36858200662C3C /* PurposeItemsDatabase.swift */; };
 		E3FF361B1A36391C00D01450 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FF361A1A36391C00D01450 /* AppDelegate.swift */; };
 		E3FF361D1A36391C00D01450 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FF361C1A36391C00D01450 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		E3461D1D1A3935AA000A235A /* managedItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = managedItems.swift; sourceTree = "<group>"; };
 		E3BB02871A378706001E6153 /* cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cell.swift; sourceTree = "<group>"; };
+		E3CC7DCA1A3A302E009C9DF1 /* managedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = managedCell.swift; sourceTree = "<group>"; };
 		E3D5E0FC1A36858200662C3C /* PurposeItemsDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PurposeItemsDatabase.swift; path = ../PurposeItemsDatabase.swift; sourceTree = "<group>"; };
 		E3FF36151A36391C00D01450 /* UploadingParseDataToTables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UploadingParseDataToTables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3FF36191A36391C00D01450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				E3FF361C1A36391C00D01450 /* ViewController.swift */,
 				E3BB02871A378706001E6153 /* cell.swift */,
 				E3FF361E1A36391C00D01450 /* Main.storyboard */,
+				E3CC7DCA1A3A302E009C9DF1 /* managedCell.swift */,
 				E3461D1D1A3935AA000A235A /* managedItems.swift */,
 				E3FF36211A36391C00D01450 /* Images.xcassets */,
 				E3FF36231A36391C00D01450 /* LaunchScreen.xib */,
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3FF361D1A36391C00D01450 /* ViewController.swift in Sources */,
+				E3CC7DCB1A3A302E009C9DF1 /* managedCell.swift in Sources */,
 				E3461D1E1A3935AA000A235A /* managedItems.swift in Sources */,
 				E3BB02881A378706001E6153 /* cell.swift in Sources */,
 				E3D5E0FD1A36858200662C3C /* PurposeItemsDatabase.swift in Sources */,

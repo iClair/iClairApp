@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="a2D-m5-feP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pVD-PS-RBR">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -193,7 +193,7 @@
                                 <rect key="frame" x="7" y="219" width="343" height="448"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="68" id="Gye-YG-fZZ" customClass="cell" customModule="UploadingParseDataToTables" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" rowHeight="68" id="Gye-YG-fZZ" customClass="managedCell" customModule="UploadingParseDataToTables" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gye-YG-fZZ" id="hMz-YO-dvK">
@@ -226,7 +226,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="showPeople:" destination="Gye-YG-fZZ" eventType="touchUpInside" id="0VP-yh-RAK"/>
+                                                        <action selector="showPeople:" destination="Gye-YG-fZZ" eventType="touchUpInside" id="uIP-A0-5HH"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7i2-XO-Vmz">
@@ -235,16 +235,16 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="addItem:" destination="Gye-YG-fZZ" eventType="touchUpInside" id="lhW-X9-NYG"/>
+                                                        <action selector="addItem:" destination="Gye-YG-fZZ" eventType="touchUpInside" id="CfO-96-3aB"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="associatedImage" destination="qOQ-8Y-QoV" id="Mvz-6i-he0"/>
-                                            <outlet property="itemCategory" destination="0BC-Xm-ZAS" id="xID-mt-7v7"/>
-                                            <outlet property="itemTitle" destination="RZd-uS-cQA" id="0S9-Tj-JnJ"/>
-                                            <outlet property="peopleAdopted" destination="4NI-oh-yje" id="DIl-G7-tfx"/>
+                                            <outlet property="associatedImage" destination="qOQ-8Y-QoV" id="UwQ-pB-zHG"/>
+                                            <outlet property="itemCategory" destination="0BC-Xm-ZAS" id="gqX-6d-fyB"/>
+                                            <outlet property="itemTitle" destination="RZd-uS-cQA" id="Nk7-ir-DKN"/>
+                                            <outlet property="peopleAdopted" destination="4NI-oh-yje" id="BNN-8Q-DEj"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
